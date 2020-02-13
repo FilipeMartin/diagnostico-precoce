@@ -1,0 +1,9 @@
+@import "styles/fonts/variables";
+@import "styles/styles-var";
+@import "~bootstrap/scss/bootstrap";
+@import "styles/utilities";
+@import "styles/fonts/style.scss";
+
+body {
+    background: $background;
+}
