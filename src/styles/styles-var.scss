@@ -1,27 +1,48 @@
 $icomoon-font-path: "../../assets/fonts";
 
+$background: #f6f6f6;
+
 $blue: #03286a;
 $blueLight: #7082a4;
 $blueSky: #CDE0EF;
 $green: #259821;
-$green-light: #cfe3cb;
-$green-clear: #77bb6b;
+$greenLight: #cfe3cb;
+$greenClear: #77bb6b;
 $yellow: #f7a30f;
 $red: #d95f5f;
 $orange: #ef6b01;
+$grey: #656565;
+$greyLight: #DBDBDB;
+$white: #FFF;
 
-$background: #f6f6f6;
+:export {
+  blue: $blue;
+  blueight: $blueLight;
+  blueSky: $blueSky;
+  green: $green;
+  greenLight: $greenLight;
+  greenClear: $greenClear;
+  yellow: $yellow;
+  red: $red;
+  orange: $orange;
+  grey: $grey;
+  greyLight: $greyLight;
+  white: $white;
+}
 
 $theme-colors: (
   "blue": $blue,
   "blue-light": $blueLight,
   "blue-sky": $blueSky,
   "green": $green,
-  "green-light": $green-light,
-  "green-clear": $green-clear,
+  "green-light": $greenLight,
+  "green-clear": $greenClear,
   "yellow": $yellow,
   "red": $red,
-  "orange": $orange
+  "orange": $orange,
+  "grey": $grey,
+  "grey-light": $greyLight,
+  "white": $white,
 );
 
 $font-family-base: "Roboto", sans-serif;

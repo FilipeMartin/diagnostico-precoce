@@ -6,12 +6,19 @@ interface Props {
 }
 
 export const Menu: React.FC<Props> = () => {
+
     return (
         <Container>
             <li className="active">
-                <i className="icon-ampulheta fs-18"></i> Perfil
+                <span className="fs-22 mr-3">
+                    <i className="icon-ampulheta"></i>
+                </span>
+                Exames Pendentes de Devolutiva
             </li>
             <li>
+                <span className="fs-22 mr-3">
+                    <i className="icon-ampulheta"></i>
+                </span>
                 Configuração
             </li>
         </Container>

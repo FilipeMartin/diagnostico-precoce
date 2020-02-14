@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?na4l23');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?na4l23#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?na4l23') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?na4l23') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?na4l23##{$icomoon-font-family}') format('svg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?eovo0n');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?eovo0n#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?eovo0n') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?eovo0n') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?eovo0n##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -29,8 +29,7 @@ i {
 
 .icon-ampulheta {
   &:before {
-    content: $icon-ampulheta;     
-    color: #656565;
+    content: $icon-ampulheta; 
   }
 }
 .icon-cart {
