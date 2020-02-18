@@ -1,11 +1,10 @@
 import React from 'react';
-import Menu from './components/Menu';
+import Dashboard from './pages/Dashboard';
 
 const App = () => {
+
   return (
-    <div className="">
-      <Menu />
-    </div>
+    <Dashboard />
   );
 }
 
