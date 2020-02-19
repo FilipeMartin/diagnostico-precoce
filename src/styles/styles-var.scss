@@ -13,6 +13,8 @@ $red: #d95f5f;
 $orange: #ef6b01;
 $grey: #656565;
 $greyLight: #DBDBDB;
+$grey_1: #707070;
+$purple: #662C90;
 $white: #FFF;
 
 :export {
@@ -27,6 +29,8 @@ $white: #FFF;
   orange: $orange;
   grey: $grey;
   greyLight: $greyLight;
+  grey_1: $grey_1;
+  purple: $purple;
   white: $white;
 }
 
@@ -42,12 +46,22 @@ $theme-colors: (
   "orange": $orange,
   "grey": $grey,
   "grey-light": $greyLight,
+  "grey-1": $grey_1,
+  "purple": $purple,
   "white": $white,
+);
+
+$font-sizes: 8, 10, 12, 14, 15, 16, 18, 20, 22, 24, 26, 28, 32, 34, 36, 48, 64, 72 !default;
+
+$spacers: (
+  6: 1rem * 3.5
 );
 
 $font-family-base: "Roboto", sans-serif;
 
-$font-sizes: 8, 10, 12, 14, 15, 16, 18, 20, 22, 24, 28, 32, 36, 48, 64, 72 !default;
+.font-raleway {
+  font-family: "Raleway", sans-serif !important;
+}
 
 $sizes: (
   10: 10%,
@@ -58,8 +72,4 @@ $sizes: (
   70: 70%,
   80: 80%,
   90: 90%
-);
-
-$spacers: (
-  6: 1rem * 3.5
 );

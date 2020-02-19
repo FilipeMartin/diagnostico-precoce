@@ -3,7 +3,7 @@ import styles from 'styles/styles.module.scss';
 
 const Container = styled.ul`
     
-    width: 280px;
+    width: 250px;
     height: 100%;
     background: ${styles.white};
     display: flex;

@@ -1,7 +1,8 @@
 import React from 'react';
-import Container from './styles';
+import Container, { Teste } from './styles';
 import { Menu, MenuItem, MenuSub } from 'components/Menu';
 import Header from 'components/Header';
+import { Dropdown } from 'react-bootstrap';
 
 const Dashboard = () => {
     const menu: Array<any> = [
@@ -42,43 +43,31 @@ const Dashboard = () => {
         <Container>
             <Header className="header" />
             <Menu className="menu">
-                {menu.map((item: any) => (
-                    <MenuItem title={item.text} icon={item.icon} path={item.path} >
+                {menu.map((item: any, index: number) => (
+                    <MenuItem key={index} title={item.text} icon={item.icon} path={item.path} >
                         {item.children.length > 0 &&
                             <MenuSub>
-                                {item.children.map((subItem: any) => (
-                                    <MenuItem title={subItem.text} icon={subItem.icon} path={subItem.path} />
+                                {item.children.map((subItem: any, index: number) => (
+                                    <MenuItem key={index} title={subItem.text} icon={subItem.icon} path={subItem.path} />
                                 ))}
                             </MenuSub>
                         }
                     </MenuItem>
                 ))}
             </Menu>
-            {/* <Menu>
-                <MenuItem title="Meu Dashboard" icon="icon-logo" path="/" />
-                <MenuItem title="Configurações Sistema" icon="icon-config" path="/">
-                    <MenuSub>
-                        <MenuItem title="Cadastrar Paciente" icon="icon-add" path="/" />
-                        <MenuItem title="Consultar Pacientes" icon="icon-user-group" path="/">
-                            <MenuSub>
-                                <MenuItem title="Cadastrar Paciente" icon="icon-add" path="/" />
-                                <MenuItem title="Consultar Pacientes" icon="icon-user-group" path="/" >
-                                    <MenuSub>
-                                        <MenuItem title="Cadastrar Paciente" icon="icon-add" path="/" />
-                                        <MenuItem title="Consultar Pacientes" icon="icon-user-group" path="/" />
-                                    </MenuSub>
-                                </MenuItem>
-                                <MenuItem title="Consultar Pacientes" icon="icon-user-group" path="/" />
-                            </MenuSub>
-                        </MenuItem>
-                        <MenuItem title="Meu Dashboard" icon="icon-logo" path="/" />
-                    </MenuSub>
-                </MenuItem>
-                <MenuItem title="Cadastrar Paciente" icon="icon-add" path="/" />
-                <MenuItem title="Consultar Pacientes" icon="icon-user-group" path="/" />
-            </Menu> */}
             <main>
-                <p>Conteúdo</p>
+                <Dropdown>
+                    <Dropdown.Toggle as={Teste} id="teste">
+                        <i className="icon-settings fs-34 text-grey-1"></i>
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu>
+                        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                        <Dropdown.Divider />
+                        <Dropdown.Item href="#/action-3">Sair</Dropdown.Item>
+                    </Dropdown.Menu>
+                </Dropdown>
             </main>
         </Container>
     );

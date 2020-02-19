@@ -3,13 +3,14 @@ import styled from 'styled-components';
 const Container = styled.div`
 
     display: grid;
-    grid-template-columns: 280px auto;
+    grid-template-columns: 250px auto;
     grid-template-rows: 128px auto;
     grid-template-areas: "header header" "aside main";
     height: 100vh;
 
     .header {
         grid-area: header;
+        z-index: 1000;
     }
 
     .menu {
@@ -20,6 +21,18 @@ const Container = styled.div`
         grid-area: main;
         padding: 25px;
     }
+
 `;
 
 export default Container;
+
+export const Teste = styled.div`
+
+    width: fit-content;
+    display: flex;
+    cursor: pointer;
+
+    &:after {
+        display: none;
+    }
+`;
