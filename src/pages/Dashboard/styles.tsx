@@ -21,18 +21,6 @@ const Container = styled.div`
         grid-area: main;
         padding: 25px;
     }
-
 `;
 
 export default Container;
-
-export const Teste = styled.div`
-
-    width: fit-content;
-    display: flex;
-    cursor: pointer;
-
-    &:after {
-        display: none;
-    }
-`;

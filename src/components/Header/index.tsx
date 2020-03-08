@@ -1,5 +1,7 @@
 import React from 'react';
-import Container from './styles';
+import { Dropdown } from 'react-bootstrap';
+
+import Container, { DropdownToggle } from './styles';
 import avatar from 'assets/avatar.png';
 
 interface Props {
@@ -29,9 +31,18 @@ const Header: React.FC<Props> = props => {
                     </span>
                 </div>
             </div>
-            <div className="d-flex ml-4 mr-6">
-                <i className="icon-settings fs-34 text-grey-1"></i>
-            </div>
+            <Dropdown drop="left">
+                <Dropdown.Toggle as={DropdownToggle} id="menu-config" className="ml-4 mr-6">
+                    <i className="icon-settings text-grey-1 fs-34"></i>
+                </Dropdown.Toggle>
+                <Dropdown.Menu>
+                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                    <Dropdown.Divider />
+                    <Dropdown.Item href="#/action-3">Sair</Dropdown.Item>
+                </Dropdown.Menu>
+            </Dropdown>
         </Container>
     );
 }

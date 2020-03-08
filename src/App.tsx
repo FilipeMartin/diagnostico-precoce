@@ -1,11 +1,9 @@
 import React from 'react';
-import Dashboard from './pages/Dashboard';
+import Routes from './routes';
 
 const App = () => {
 
-  return (
-    <Dashboard />
-  );
+  return <Routes />;
 }
 
 export default App;
